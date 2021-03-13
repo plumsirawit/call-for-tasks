@@ -1,5 +1,6 @@
 import { hashSync, genSaltSync } from "bcrypt";
 import { putRegisterUser } from "../../api";
+import { postLoginUser } from "../../api/user/login";
 
 /**
  * Performs user registration, returns status and message
@@ -24,4 +25,11 @@ export async function registerUser(
     status: result.status,
     ...(result.data.message && { message: result.data.message }),
   };
+}
+
+export async function login(username: string, password: string) {
+  const result = await postLoginUser(username, password);
+  if (result.status !== 200) {
+    return null;
+  }
 }
