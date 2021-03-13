@@ -1,0 +1,97 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #152024;
+}
+
+.loginBoxWrapper {
+  max-width: 30rem;
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+}
+
+.loginBox {
+  border: 10px solid;
+  border-radius: 20px;
+  display: flex;
+}
+
+.innerLoginBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 20px solid;
+  border-radius: 10px;
+  border-color: white;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 1rem 4rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease,
+    background-color 0.15s ease;
+  background-color: #efefef;
+  width: 10rem;
+  cursor: pointer;
+}
+
+.submitButton:hover,
+.submitButton:focus,
+.submitButton:active {
+  color: #15ff79;
+  border-color: #15ff79;
+  background-color: #1f2e3d;
+}
+
+.submitButton h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.submitButton p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.submitButtonText {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.loginTextInput {
+  border: 0px;
+  border-bottom: 1px solid;
+  border-color: #e0e0e0;
+  outline: none;
+  transition: border-color 0.25s ease;
+  font-size: 1rem;
+  min-width: 60%;
+}
+
+.loginTextInput:focus {
+  border-bottom-color: #152024;
+}
+
+.innerLoginBox > * + * {
+  margin-top: 1rem;
+}
