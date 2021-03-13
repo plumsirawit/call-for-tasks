@@ -3,26 +3,26 @@ import styles from "../styles/Login.module.css";
 import { useState } from "react";
 
 /**
- * submits email and password and retrieves user object or null if it fails
+ * submits username and password and retrieves user object or null if it fails
  * @todo implementation
- * @param email
+ * @param username
  * @param password
  */
-function submitLogin(email: string, password: string): any {}
+function submitLogin(username: string, password: string): any {}
 
 interface LoginBoxProps {}
 function LoginBox(props: LoginBoxProps) {
-  const [email, setEmail] = useState<string>("");
+  const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   return (
     <div className={styles.loginBox}>
       <div className={styles.innerLoginBox}>
         <input
           type="text"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
           className={styles.loginTextInput}
-          placeholder="Email"
+          placeholder="Username"
         />
         <input
           type="password"
@@ -34,7 +34,7 @@ function LoginBox(props: LoginBoxProps) {
         <div>
           <div
             className={styles.submitButton}
-            onClick={() => submitLogin(email, password)}
+            onClick={() => submitLogin(username, password)}
           >
             <span className={styles.submitButtonText}>Sign in</span>
           </div>
