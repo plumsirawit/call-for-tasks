@@ -8,20 +8,20 @@
   background-color: #152024;
 }
 
-.loginBoxWrapper {
+.registerBoxWrapper {
   max-width: 30rem;
   width: 30vw;
   min-height: 30vh;
   display: flex;
 }
 
-.loginBox {
+.registerBox {
   border: 10px solid;
   border-radius: 20px;
   display: flex;
 }
 
-.innerLoginBox {
+.innerRegisterBox {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -78,7 +78,7 @@
   font-weight: bold;
 }
 
-.loginTextInput {
+.registerTextInput {
   border: 0px;
   border-bottom: 1px solid;
   border-color: #e0e0e0;
@@ -89,10 +89,10 @@
   font-family: "Roboto Mono", monospace;
 }
 
-.loginTextInput:focus {
+.registerTextInput:focus {
   border-bottom-color: #152024;
 }
 
-.innerLoginBox > * + * {
+.innerRegisterBox > * + * {
   margin-top: 1rem;
 }
